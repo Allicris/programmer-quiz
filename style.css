@@ -1,0 +1,73 @@
+* {
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    background-color: rgb(215, 250, 215);
+}
+
+.start-container {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.card-info {
+    text-align: center;
+    padding: 30px;
+    margin: 15px;
+    
+}
+
+.start-button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: forestgreen;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    background-color: rgb(220, 251, 195);
+    color: rgb(209, 107, 240);
+}
+
+a {
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(209, 107, 240);
+    font-style: italic;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-tab {
+    padding: 5px;
+    margin-top: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.timer {
+    margin:4px;
+    margin-left: 650px;
+    padding: 10px;
+    border: solid 3px rgb(209, 107, 240);
+    border-radius: 10px;
+}
