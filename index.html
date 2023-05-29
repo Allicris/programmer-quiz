@@ -10,17 +10,46 @@
 </head>
 
 <body>
-<div class="game-tab">
-            <a href="view-scores">View Scores</a>
-            <div id="timer" class="timer">00:00</div> 
+    <div class="game-tab">
+        <div class="score-container">
+            <a  href="#view-scores">View Scores</a>
+            <div class="score-list"></div>
         </div>
-        <div class="start-container">
-        <div class="card-header">JavaScript Quiz</div>
-        <div class="card-info">You will have a total of two minutes to answer five questions. Keep in mind if you answer
-            one wrong you will be deducted 10 seconds out of the two minutes</div>
-        <button type="button" id="start" class="start-button">Start</button>
+        <p id="timer" class="timer">Time: 00:00</p>
     </div>
-</div>
+    <div class="card-holder">
+        <div class="card-header">JavaScript Quiz</div>
+        <div class="card-info">You will have a total of 60 seconds to answer five questions. Keep in mind if you answer
+            one wrong you will be deducted 10 seconds out of the 60 seconds.</div>
+        <button type="button" id="start-quiz" class="start-button">Start</button>
+    </div>
+    <!---div for quiz-->
+    <div class="question-container">
+        <h3 class="question"></h3>
+        <div id="options">
+            <div class="option1"></div>
+            <div class="option2"></div>
+            <div class="option3"></div>
+            <div class="option4"></div>
+        </div>
+    </div>
+    <!--div for logging high score-->
+    <div class="final-result">
+        <h3>All done!</h3>
+        <div class="finalscore"></div>
+        <br>
+        <form id="initials-form">
+            <div>Enter initials:</div>
+            <input type="text" name="initials" id="initials">
+            <button type="button" class="submit">Submit</button>
+        </form>
+    </div>
+    <div class="correct">Correct!</div>
+    <div class="wrong">Wrong!</div>
+    <button type="button" class="done">Done</button>
+</main>
+    </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

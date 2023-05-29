@@ -6,7 +6,7 @@ body {
     background-color: rgb(215, 250, 215);
 }
 
-.start-container {
+.card-holder {
     background-color: white;
     margin: 20px;
     padding: 20px;
@@ -70,4 +70,41 @@ align-items: center;
     padding: 10px;
     border: solid 3px rgb(209, 107, 240);
     border-radius: 10px;
+}
+
+.question-container {
+    background-color: white;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+.final-result {
+    background-color: white;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+.hidden {
+    color: red;
+}
+
+.correct {
+    display: none;
+}
+
+.wrong {
+    display: none;
+}
+
+.score-list {
+    display: none;
+}
+
+
+.done {
+    display: none;
 }
