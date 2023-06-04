@@ -115,7 +115,7 @@ function handleIncorrectAnswer() {
         timeLeft -= 10;
         questionIndex++;
     } else {
-        clearInterval(timerInterval);
+        clearInterval(timerInterval)
         finalResultPage();
     }
     if (timeLeft === 0) {
