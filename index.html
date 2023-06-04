@@ -12,8 +12,12 @@
 <body>
     <div class="game-tab">
         <div class="score-container">
-            <a  href="#view-scores">View Scores</a>
+            <a  id="view-scores">View Scores</a>
             <div class="score-list"></div>
+            
+            <button class="back">Go back</button>
+            <button class="clear">Clear scores</button>
+            
         </div>
         <p id="timer" class="timer">Time: 00:00</p>
     </div>
@@ -41,11 +45,11 @@
         <form id="initials-form">
             <div>Enter initials:</div>
             <input type="text" name="initials" id="initials">
-            <button type="button" class="submit">Submit</button>
+            <button type="button" id="submit">Submit</button>
         </form>
     </div>
     <div class="correct">Correct!</div>
-    <div class="wrong">Wrong!</div>
+    <div class="wrong">Incorrect!</div>
     <button type="button" class="done">Done</button>
 </main>
     </div>
