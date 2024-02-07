@@ -1,146 +1,222 @@
 * {
-    font-family: 'Courier New', Courier, monospace
+  font-family: "Mukta Malar", sans-serif;
+  margin-top: 10px;
 }
 
 body {
-    background-color: rgb(215, 250, 215);
+  background-color: #8ecae6;
 }
 
-.card-holder {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+img {
+  max-width: 35px;
+  margin: 12px;
+}
+
+.start-page {
+  margin: 50px;
+  padding: 10px;
+  background-color: #023047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px rgb(255, 255, 255);
 }
 
 .card-header {
-    padding: 15px;
-    margin: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  color: #ffb703;
+  font-size: 40px;
+  padding: 20px;
 }
 
 .card-info {
-    text-align: center;
-    padding: 30px;
-    margin: 15px;
-    
-}
-
-.start-button {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: forestgreen;
-}
-
-.start-button:hover {
-    cursor: pointer;
-    background-color: rgb(220, 251, 195);
-    color: rgb(209, 107, 240);
-}
-
-a {
-    padding: 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: rgb(209, 107, 240);
-    font-style: italic;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-}
-
-.game-tab {
-    padding: 5px;
-    margin-top: 10px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  font-family: "Baloo 2", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  display: block;
 }
 
 .timer {
-    margin:4px;
-    margin-left: 650px;
-    padding: 10px;
-    border: solid 3px rgb(209, 107, 240);
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
 }
 
-.question-container {
-    background-color: white;
-    color: black;
-    margin: 20px;
-    padding: 20px;
-    display: none;
-}
-
-.final-result {
-    display: none;
-    background-color: white;
-    color: black;
-    margin: 20px;
-    padding: 20px;
-}
-
-.hidden {
-    color: red;
-}
-
-.correct {
-    display: none;
-    font-style: italic;
-}
-
-.wrong {
-    display: none;
-    font-style: italic;
-}
-
-#view-scores {
+.start-page-btns, .history-btns, .results {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#view-scores:hover {
-    cursor: pointer;
-}
-
-.score-list {
-    display: none;
-    margin: 20px;
-margin-top: 20px;
-margin-bottom: 40px;
-margin-left: 40px;
-}
-
-
-.done {
-    display: none;
-}
-
+.start-button,
+.done,
+#submit,
 .back {
-    display: none;
-    margin: 15px;
-margin-top: 15px;
-margin-bottom: 15px;
-margin-left: 30px;
+  background-color: #ffb703;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.start-button:hover,
+.done:hover,
+#submit:hover,
+.back:hover {
+  color: #ffb703;
+  background-color: white;
+  border: 2px solid #ffb703;
 }
 
 .clear {
-    display: none;
-    margin-left: 30px;
+    background-color: #023047;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 15px; 
 }
 
-
-#submit, .done, .back:hover, .clear:hover, .option1, .option2, .option3, .option4:hover {
-cursor: pointer;
+.clear:hover {
+    background-color: white;
+    border-color: #023047;
+    color: #023047;
 }
 
+#view-scores {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #fb8500;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 20px;
+}
 
+#view-scores:hover {
+  color: #fb8500;
+  background-color: white;
+  border: 2px solid #fb8500;
+}
+
+.score-container {
+    font-family: "Baloo 2", sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #219ebc;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px rgb(255, 255, 255);
+}
+
+.score-list {
+    list-style: none;
+    font-size: 20px;
+    color: #023047;
+    padding-top: 25px;
+} 
+
+.question-container {
+  background-color: #219ebc;
+  color: white;
+  margin: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+  height: 50vh;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px rgb(255, 255, 255);
+}
+
+.question {
+  text-align: center;
+  font-size: 30px;
+}
+
+.option1,
+.option2,
+.option3,
+.option4 {
+  font-size: 25px;
+  padding-left: 35px;
+}
+
+.correct,
+.wrong {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+
+.final-result {
+  background-color: #023047;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+  height: 50vh;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px rgb(255, 255, 255);
+}
+
+.final-result h3 {
+    font-family: "Baloo 2", sans-serif;
+    color:#ffb703;
+}
+
+#initials-form input {
+    font-family: "Baloo 2", sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    height: 2vh;
+}
+
+.score-container,
+.question-container,
+.final-result,
+.score-list,
+.correct,
+.wrong,
+.done,
+.back,
+.clear {
+  display: none;
+}
+
+.start-button:hover,
+#view-scores:hover,
+#submit,
+.done,
+.back:hover,
+.clear:hover,
+.option1:hover,
+.option2:hover,
+.option3:hover,
+.option4:hover {
+  cursor: pointer;
+}
+
+.option1:hover,
+.option2:hover,
+.option3:hover,
+.option4:hover {
+  color: black;
+}
